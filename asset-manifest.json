@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Oxygen-modulo3-photoApp/static/css/main.444c64df.css",
-    "main.js": "/Oxygen-modulo3-photoApp/static/js/main.79f2cb3b.js",
+    "main.js": "/Oxygen-modulo3-photoApp/static/js/main.838aea90.js",
     "static/js/787.bb555355.chunk.js": "/Oxygen-modulo3-photoApp/static/js/787.bb555355.chunk.js",
     "static/media/background.jpg": "/Oxygen-modulo3-photoApp/static/media/background.0c53b160b553244b66a4.jpg",
     "static/media/shape1.svg": "/Oxygen-modulo3-photoApp/static/media/shape1.566276277d4afd900d34.svg",
     "index.html": "/Oxygen-modulo3-photoApp/index.html",
     "static/media/shape2.svg": "/Oxygen-modulo3-photoApp/static/media/shape2.9b4b1315e0a8136ab03e.svg",
     "main.444c64df.css.map": "/Oxygen-modulo3-photoApp/static/css/main.444c64df.css.map",
-    "main.79f2cb3b.js.map": "/Oxygen-modulo3-photoApp/static/js/main.79f2cb3b.js.map",
+    "main.838aea90.js.map": "/Oxygen-modulo3-photoApp/static/js/main.838aea90.js.map",
     "787.bb555355.chunk.js.map": "/Oxygen-modulo3-photoApp/static/js/787.bb555355.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.444c64df.css",
-    "static/js/main.79f2cb3b.js"
+    "static/js/main.838aea90.js"
   ]
 }
