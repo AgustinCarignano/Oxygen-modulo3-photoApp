@@ -4,24 +4,28 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import MyCollectionModal from "./MyCollectionModal";
 import MyChip from "../../components/MyChip";
+import editIcon from "../../images/editIcon.svg";
+import tagIcon from "../../images/tagIcon.svg";
+import bookmarkDelete from "../../images/bookmarkDelete.svg";
+import downloadIcon from "../../images/downloadIcon.svg";
 
 export default function MyCollectionCard({ img }) {
   //Elementos que se muestran en la tarjeta y que estan asociadas a una ventana modal
   const editDescriptionElement = (
     <span className="icons editIcon">
-      <img src="/images/editIcon.svg" alt="" />
+      <img src={editIcon} alt="" />
     </span>
   );
 
   const tagElement = (
     <span className="icons tagIcon">
-      <img src="/images/tagIcon.svg" alt="" />
+      <img src={tagIcon} alt="" />
     </span>
   );
 
   const deletePhotoElement = (
     <span className="icons bookmarkDelete">
-      <img src="/images/bookmarkDelete.svg" alt="" />
+      <img src={bookmarkDelete} alt="" />
     </span>
   );
 
@@ -89,7 +93,7 @@ export default function MyCollectionCard({ img }) {
       />
       <a href="#void" downloadurl={img.urls.full} download="image.jpg">
         <span className="icons downloadIcon">
-          <img src="/images/downloadIcon.svg" alt="" />
+          <img src={downloadIcon} alt="" />
         </span>
       </a>
     </Card>

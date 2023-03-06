@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import arrowUp from "../images/arrowUp.svg";
 
 function ScrollUp() {
   const [scroll, setScroll] = useState(0);
@@ -25,7 +26,7 @@ function ScrollUp() {
   if (scroll > 0.8) {
     return (
       <div className="arrowUpIcon" onClick={handleArrowClick}>
-        <img src="/images/arrowUp.svg" alt="" />
+        <img src={arrowUp} alt="" />
       </div>
     );
   } else {

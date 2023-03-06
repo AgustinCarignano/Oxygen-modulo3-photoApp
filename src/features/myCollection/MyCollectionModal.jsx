@@ -12,6 +12,7 @@ import {
 } from "./myCollectionSlice";
 import MyChip from "../../components/MyChip";
 import MyButton from "../../components/MyButton";
+import closeIcon from "../../images/closeIcon.svg";
 
 const style = {
   position: "absolute",
@@ -164,7 +165,7 @@ export default function MyCollectionModal(props) {
             />
           </form>
           <span className="closeModalIcon" onClick={handleClose}>
-            <img src="/images/closeIcon.svg" alt="" />
+            <img src={closeIcon} alt="" />
           </span>
         </Box>
       </Modal>

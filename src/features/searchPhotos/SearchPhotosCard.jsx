@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { Snackbar } from "@mui/material";
+import bookmark from "../../images/bookmark.svg";
 
 export default function SearchPhotosCard(props) {
   const [btnSelected, setBtnSelected] = useState(false);
@@ -36,7 +37,7 @@ export default function SearchPhotosCard(props) {
         image={imgUrl}
       />
       <span className={btnClassName} onClick={handleOnClick}>
-        <img src="/images/bookmark.svg" alt="" />
+        <img src={bookmark} alt="" />
       </span>
       <Snackbar
         sx={{ color: "red" }}

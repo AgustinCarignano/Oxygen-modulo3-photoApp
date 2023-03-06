@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import controlArrow from "../images/controlArrow.svg";
 
 const theme = createTheme({
   palette: {
@@ -64,13 +65,13 @@ function Slide({ photoList }) {
           className="slider__controls slider-prevImg"
           onClick={handlePrevPhoto}
         >
-          <img src="/images/controlArrow.svg" alt="arrow icon" />
+          <img src={controlArrow} alt="arrow icon" />
         </span>
         <span
           className="slider__controls slider-nextImg"
           onClick={handleNextPhoto}
         >
-          <img src="/images/controlArrow.svg" alt="arrow icon" />
+          <img src={controlArrow} alt="arrow icon" />
         </span>
         {photoList.map((item) => {
           const index = photoList.findIndex((el) => el === item);
