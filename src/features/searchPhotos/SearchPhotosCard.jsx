@@ -36,7 +36,7 @@ export default function SearchPhotosCard(props) {
         image={imgUrl}
       />
       <span className={btnClassName} onClick={handleOnClick}>
-        <img src="./images/bookmark.svg" alt="" />
+        <img src="/images/bookmark.svg" alt="" />
       </span>
       <Snackbar
         sx={{ color: "red" }}

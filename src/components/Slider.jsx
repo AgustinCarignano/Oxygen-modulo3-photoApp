@@ -64,13 +64,13 @@ function Slide({ photoList }) {
           className="slider__controls slider-prevImg"
           onClick={handlePrevPhoto}
         >
-          <img src="./images/controlArrow.svg" alt="arrow icon" />
+          <img src="/images/controlArrow.svg" alt="arrow icon" />
         </span>
         <span
           className="slider__controls slider-nextImg"
           onClick={handleNextPhoto}
         >
-          <img src="./images/controlArrow.svg" alt="arrow icon" />
+          <img src="/images/controlArrow.svg" alt="arrow icon" />
         </span>
         {photoList.map((item) => {
           const index = photoList.findIndex((el) => el === item);

@@ -9,19 +9,19 @@ export default function MyCollectionCard({ img }) {
   //Elementos que se muestran en la tarjeta y que estan asociadas a una ventana modal
   const editDescriptionElement = (
     <span className="icons editIcon">
-      <img src="./images/editIcon.svg" alt="" />
+      <img src="/images/editIcon.svg" alt="" />
     </span>
   );
 
   const tagElement = (
     <span className="icons tagIcon">
-      <img src="./images/tagIcon.svg" alt="" />
+      <img src="/images/tagIcon.svg" alt="" />
     </span>
   );
 
   const deletePhotoElement = (
     <span className="icons bookmarkDelete">
-      <img src="./images/bookmarkDelete.svg" alt="" />
+      <img src="/images/bookmarkDelete.svg" alt="" />
     </span>
   );
 
@@ -89,7 +89,7 @@ export default function MyCollectionCard({ img }) {
       />
       <a href="#void" downloadurl={img.urls.full} download="image.jpg">
         <span className="icons downloadIcon">
-          <img src="./images/downloadIcon.svg" alt="" />
+          <img src="/images/downloadIcon.svg" alt="" />
         </span>
       </a>
     </Card>

@@ -164,7 +164,7 @@ export default function MyCollectionModal(props) {
             />
           </form>
           <span className="closeModalIcon" onClick={handleClose}>
-            <img src="./images/closeIcon.svg" alt="" />
+            <img src="/images/closeIcon.svg" alt="" />
           </span>
         </Box>
       </Modal>

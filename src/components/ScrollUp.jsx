@@ -25,7 +25,7 @@ function ScrollUp() {
   if (scroll > 0.8) {
     return (
       <div className="arrowUpIcon" onClick={handleArrowClick}>
-        <img src="./images/arrowUp.svg" alt="" />
+        <img src="/images/arrowUp.svg" alt="" />
       </div>
     );
   } else {

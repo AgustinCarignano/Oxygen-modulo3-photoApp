@@ -35,15 +35,15 @@ function PrincipalPage() {
           Find the photo you are looking for, it's as simple as that.
         </h2>
         <figure className="principalPage__catalog-figure figure_1">
-          <img src="./images/cat.jpg" alt="cute cat" />
+          <img src="/images/cat.jpg" alt="cute cat" />
           <figcaption>Cute photos</figcaption>
         </figure>
         <figure className="principalPage__catalog-figure figure_2">
-          <img src="./images/background-option.jpg" alt="buble background" />
+          <img src="/images/background-option.jpg" alt="buble background" />
           <figcaption>Backgrounds</figcaption>
         </figure>
         <figure className="principalPage__catalog-figure figure_3">
-          <img src="./images/landscape.jpg" alt="lake and mountain landscape" />
+          <img src="/images/landscape.jpg" alt="lake and mountain landscape" />
           <figcaption>Amazing landscapes</figcaption>
         </figure>
         <span className="shape1"></span>
