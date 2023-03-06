@@ -1,0 +1,365 @@
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: unset;
+}
+
+.arrowUpIcon {
+  background-color: hsla(50, 19%, 38%, 0.5);
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  padding: 10px;
+  position: fixed;
+  bottom: 50px;
+  right: 5%;
+  cursor: pointer;
+}
+.arrowUpIcon > img {
+  width: 100%;
+}
+
+/*HOME--------------------------------------------------------- */
+.principalPage__brand-bgContainer {
+  position: relative;
+}
+.principalPage__brand-bg {
+  background-image: url(../../public/images/background.jpg);
+  filter: blur(4px);
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 250px;
+  width: 100%;
+}
+.principalPage__brand-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  /* background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 20px; */
+  font: normal 400 16px/26px "Montserrat", sans-serif;
+  text-align: center;
+  letter-spacing: 0.46px;
+  color: #fff;
+  width: 300px;
+  margin: 15px auto;
+}
+
+.principalPage__brand-title strong {
+  display: block;
+  margin-top: 26px;
+}
+
+.principalPage__brand-subTitle {
+  margin: 30px auto;
+  width: 270px;
+  font: normal 400 20px/30px "Montserrat", sans-serif;
+  text-align: center;
+  letter-spacing: 0.46px;
+  color: #402712;
+}
+
+.principalPage__catalog {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.shape1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url("../../public/images/shape1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 130px;
+  right: 25px;
+}
+.shape2 {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background-image: url("../../public/images/shape2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 280px;
+  left: 40px;
+}
+
+.principalPage__catalog-title {
+  font: normal 700 20px/30px "Montserrat Alternates", sans-serif;
+  letter-spacing: 2.46px;
+  color: #402712;
+  margin: 30px auto;
+}
+
+.principalPage__catalog-figure {
+  width: 150px;
+  margin-top: 40px;
+}
+.principalPage__catalog-figure > figcaption {
+  font: normal 400 16px/26px "Montserrat", sans-serif;
+  color: #402712;
+}
+.principalPage__catalog-figure > img {
+  width: 100%;
+  border-radius: 10px;
+}
+.figure_1 {
+  transform: rotate(-12.5deg);
+  margin-right: auto;
+}
+.figure_2 {
+  transform: rotate(12.5deg);
+  margin-left: auto;
+}
+.figure_3 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+}
+
+.principalPage__endPage-title {
+  font: normal 400 20px/30px "Montserrat Alternates", sans-serif;
+  letter-spacing: 2.46px;
+  color: #402712;
+  margin: 30px auto;
+  max-width: 500px;
+}
+
+@media (min-width: 780px) {
+  .principalPage__brand-bg {
+    height: 500px;
+  }
+  .principalPage__brand-title {
+    font-size: 32px;
+    line-height: 40px;
+    width: 700px;
+  }
+
+  .principalPage__brand-subTitle {
+    font-size: 24px;
+    width: 300px;
+  }
+
+  .principalPage__catalog {
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas:
+      "title title title"
+      "cat land back";
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .shape1 {
+    display: none;
+    /* top: 66%;
+    left: 20%; */
+  }
+
+  .shape2 {
+    display: none;
+    /* top: 63%;
+    left: unset;
+    right: 21%; */
+  }
+
+  .principalPage__catalog-title {
+    font-size: 32px;
+    max-width: 600px;
+    grid-area: title;
+  }
+
+  .principalPage__catalog-figure {
+    width: 80%;
+  }
+
+  .principalPage__catalog-figure > figcaption {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+
+  .figure_1 {
+    max-width: 350px;
+    grid-area: cat;
+    margin-top: 100px;
+  }
+  .figure_2 {
+    max-width: 350px;
+    grid-area: back;
+    margin-top: 100px;
+  }
+  .figure_3 {
+    grid-area: land;
+    width: 80%;
+  }
+
+  .principalPage__endPage {
+    padding-bottom: 50px;
+  }
+
+  .principalPage__endPage-title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .shape1 {
+    display: block;
+    top: 66%;
+    left: 20%;
+  }
+
+  .shape2 {
+    display: block;
+    top: 63%;
+    left: unset;
+    right: 21%;
+  }
+}
+
+/*FOOTER----------------------------------------------------------*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background: #736d4f;
+  box-shadow: 0px -2px 4px rgba(115, 109, 79, 0.6);
+}
+
+.footer__container {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.footer__container > p {
+  font: normal 400 8px/26px "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.footer__container > h2 {
+  font: normal 600 14px/26px "Montserrat Alternates", sans-serif;
+  margin: 0;
+}
+
+/* Slider ------------------------------------------------------------------- */
+.slider {
+  /* max-width: 1200px; */
+  margin: 30px auto 30px;
+  background-color: #736d4ecc;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+  height: 60vh;
+}
+
+.slider > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.78, -0.02, 0.69, 1.02);
+  object-fit: cover;
+}
+
+.slider__controls {
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  z-index: 100;
+}
+.slider__controls img {
+  width: 40px;
+}
+.slider-prevImg {
+  left: 10px;
+}
+.slider-nextImg {
+  right: 10px;
+  rotate: 180deg;
+}
+.slider__position {
+  z-index: 100;
+  position: absolute;
+  bottom: 10px;
+  height: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.hiddenNext {
+  z-index: 0;
+  animation: hiddenNext 1s cubic-bezier(0.78, -0.02, 0.69, 1.02) 0s forwards;
+}
+
+.showNext {
+  animation: showNext 1s cubic-bezier(0.78, -0.02, 0.69, 1.02) 0s forwards;
+  z-index: 10;
+}
+.hiddenPrev {
+  z-index: 0;
+  animation: hiddenPrev 1s cubic-bezier(0.78, -0.02, 0.69, 1.02) 0s forwards;
+}
+
+.showPrev {
+  animation: showPrev 1s cubic-bezier(0.78, -0.02, 0.69, 1.02) 0s forwards;
+  z-index: 10;
+}
+
+@keyframes hiddenNext {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes showNext {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+@keyframes hiddenPrev {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes showPrev {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    height: 70vh;
+  }
+}
