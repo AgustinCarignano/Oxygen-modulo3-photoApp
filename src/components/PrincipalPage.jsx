@@ -19,10 +19,10 @@ function PrincipalPage() {
           Start searching now or browse your collection.
         </h2>
         <div className="principalPage__brand-btns">
-          <Link to="/searchPhotos">
+          <Link to="/photo-app/searchPhotos">
             <MyButton text="Search" margin={{ top: "-5px", btm: "50px" }} />
           </Link>
-          <Link to="myCollection">
+          <Link to="/photo-app/myCollection">
             <MyButton
               text="My Collection"
               margin={{ top: "-5px", btm: "50px" }}
@@ -54,7 +54,7 @@ function PrincipalPage() {
       </section>
       <section className="principalPage__endPage">
         <h3 className="principalPage__endPage-title">And much more...</h3>
-        <Link to="/searchPhotos">
+        <Link to="/photo-app/searchPhotos">
           <MyButton text="Start now" margin={{ top: "-5px", btm: "50px" }} />
         </Link>
       </section>

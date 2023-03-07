@@ -27,7 +27,8 @@ export default function SearchPhotosCard(props) {
         ":hover .bookmarkIcon": {
           opacity: 1,
         },
-        maxWidth: 270,
+        width: 270,
+        height: 360,
       }}
     >
       <CardMedia

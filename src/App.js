@@ -14,9 +14,15 @@ function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path="/" element={<PrincipalPage />} />
-            <Route path="/searchPhotos" element={<SearchPhotosList />} />
-            <Route path="/myCollection" element={<MyCollectionList />} />
+            <Route path="/photo-app/" element={<PrincipalPage />} />
+            <Route
+              path="/photo-app/searchPhotos"
+              element={<SearchPhotosList />}
+            />
+            <Route
+              path="/photo-app/myCollection"
+              element={<MyCollectionList />}
+            />
           </Routes>
         </main>
         <Footer />

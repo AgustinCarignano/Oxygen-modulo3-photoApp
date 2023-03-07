@@ -12,8 +12,8 @@ import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
 const pages = [
-  { name: "Search photos", direction: "/searchPhotos" },
-  { name: "My collection", direction: "/myCollection" },
+  { name: "Search photos", direction: "/photo-app/searchPhotos" },
+  { name: "My collection", direction: "/photo-app/myCollection" },
 ];
 
 function Navbar() {
@@ -44,7 +44,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            <Link to="/">PhotoApp</Link>
+            <Link to="/photo-app">PhotoApp</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

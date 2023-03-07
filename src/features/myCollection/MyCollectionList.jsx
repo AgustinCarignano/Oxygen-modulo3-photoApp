@@ -101,7 +101,7 @@ function MyCollectionList() {
       <div className="emptyCollection">
         <h1 className="emptyCollection__title">There is nothing here yet!</h1>
         <h2 className="emptyCollection__subtitle">Start searching now</h2>
-        <Link to="/searchPhotos">
+        <Link to="/photo-app/searchPhotos">
           <MyButton text="Search" margin={{ top: "-5px", btm: "50px" }} />
         </Link>
       </div>

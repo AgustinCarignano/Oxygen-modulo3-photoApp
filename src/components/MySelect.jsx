@@ -18,7 +18,7 @@ export default function MySelect({ optionValue, onChange }) {
   return (
     <ThemeProvider theme={theme}>
       <FormControl sx={{ m: 0, minWidth: 120 }} size="small">
-        <InputLabel id="inputSelect">Oder by</InputLabel>
+        <InputLabel id="inputSelect">Order by</InputLabel>
         <Select
           labelId="inputSelect"
           id="inputSelect"

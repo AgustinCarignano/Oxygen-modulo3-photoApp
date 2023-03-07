@@ -36,7 +36,8 @@ export default function MyCollectionCard({ img }) {
         ":hover .icons": {
           opacity: 1,
         },
-        maxWidth: 270,
+        width: 270,
+        height: 570,
       }}
     >
       <CardMedia
