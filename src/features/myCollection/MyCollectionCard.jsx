@@ -37,7 +37,6 @@ export default function MyCollectionCard({ img }) {
           opacity: 1,
         },
         width: 270,
-        height: 570,
       }}
     >
       <CardMedia
@@ -92,7 +91,7 @@ export default function MyCollectionCard({ img }) {
         type="deletePhoto"
         img={img}
       />
-      <a href="#void" downloadurl={img.urls.full} download="image.jpg">
+      <a href={img.href} download="image.jpeg">
         <span className="icons downloadIcon">
           <img src={downloadIcon} alt="" />
         </span>

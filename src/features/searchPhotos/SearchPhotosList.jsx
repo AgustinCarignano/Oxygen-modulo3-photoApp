@@ -5,6 +5,7 @@ import { CircularProgress } from "@mui/material";
 import {
   addPhoto,
   deletePhoto,
+  createHrefToDownload,
 } from "../../features/myCollection/myCollectionSlice";
 import {
   getPhotosFromAPI,
@@ -50,6 +51,7 @@ function SearchPhotosList() {
   function handlePutInFav(photo, add) {
     if (add) {
       dispatch(addPhoto(photo));
+      dispatch(createHrefToDownload({ url: photo.urls.full, id: photo.id }));
     } else {
       dispatch(deletePhoto(photo.id));
     }
@@ -73,7 +75,7 @@ function SearchPhotosList() {
       dispatch(getPhotosFromAPI(obj));
     },
     // eslint-disable-next-line
-    [debouncedSearchTerm, dispatch] // Only call effect if debounced search term changes
+    [debouncedSearchTerm] // Only call effect if debounced search term changes
   );
 
   //Realiza el llamado incial a la API al montar el elemento
