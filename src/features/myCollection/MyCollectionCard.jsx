@@ -9,6 +9,8 @@ import tagIcon from "../../images/tagIcon.svg";
 import bookmarkDelete from "../../images/bookmarkDelete.svg";
 import downloadIcon from "../../images/downloadIcon.svg";
 
+import { saveAs } from "file-saver";
+
 export default function MyCollectionCard({ img }) {
   //Elementos que se muestran en la tarjeta y que estan asociadas a una ventana modal
   const editDescriptionElement = (
@@ -28,6 +30,16 @@ export default function MyCollectionCard({ img }) {
       <img src={bookmarkDelete} alt="" />
     </span>
   );
+
+  async function handleDownload() {
+    const response = await fetch(img.urls.full, {
+      headers: {
+        Authorization: "Client-ID JbhJ4T2vDHGE_0YaRfxjaoZoCvGXoArWcn_g_DcP624",
+      },
+    });
+    const blob = await response.blob();
+    saveAs(window.URL.createObjectURL(blob), "image.jpeg");
+  }
 
   return (
     <Card
@@ -80,8 +92,8 @@ export default function MyCollectionCard({ img }) {
       <MyCollectionModal content={tagElement} type="addTag" img={img} />
       {img.tags.length !== 0 && (
         <div className="photoTagList">
-          {img.tags.map((item) => {
-            let index = img.tags.findIndex((el) => el === item);
+          {img.tags.map((item, index) => {
+            //let index = img.tags.findIndex((el) => el === item);
             return <MyChip key={index} label={item} type="individual" />;
           })}
         </div>
@@ -91,7 +103,7 @@ export default function MyCollectionCard({ img }) {
         type="deletePhoto"
         img={img}
       />
-      <a href={img.href} download="image.jpeg">
+      <a href="#void" onClick={handleDownload}>
         <span className="icons downloadIcon">
           <img src={downloadIcon} alt="" />
         </span>

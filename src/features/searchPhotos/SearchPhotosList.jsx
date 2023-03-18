@@ -5,7 +5,6 @@ import { CircularProgress } from "@mui/material";
 import {
   addPhoto,
   deletePhoto,
-  createHrefToDownload,
 } from "../../features/myCollection/myCollectionSlice";
 import {
   getPhotosFromAPI,
@@ -28,7 +27,7 @@ import "./searchPhotosStyle.css";
 
 function SearchPhotosList() {
   const [inputSearch, setInputSearch] = useState("");
-  const debouncedSearchTerm = useDebounce(inputSearch, 500);
+  const debouncedSearchTerm = useDebounce(inputSearch, 1000);
   const dispatch = useDispatch();
   const searchPhotos = useSelector(selectSearchPhotos);
   const trendingPhotos = useSelector(selectTrendingPhotos);
@@ -51,7 +50,6 @@ function SearchPhotosList() {
   function handlePutInFav(photo, add) {
     if (add) {
       dispatch(addPhoto(photo));
-      dispatch(createHrefToDownload({ url: photo.urls.full, id: photo.id }));
     } else {
       dispatch(deletePhoto(photo.id));
     }

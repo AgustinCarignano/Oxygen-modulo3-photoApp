@@ -135,8 +135,8 @@ function MyCollectionList() {
           />
           {tagList.length !== 0 && (
             <div className="globalTagList">
-              {tagList.map((item) => {
-                let index = tagList.findIndex((el) => el === item);
+              {tagList.map((item, index) => {
+                //let index = tagList.findIndex((el) => el === item);
                 return (
                   <MyChip
                     key={index}

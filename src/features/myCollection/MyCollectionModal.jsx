@@ -97,8 +97,8 @@ export default function MyCollectionModal(props) {
             <div>
               <h6 className="modal__subtitle">Existing labels</h6>
               <div className="modal__tagList">
-                {tagList.map((item) => {
-                  let index = tagList.findIndex((el) => el === item);
+                {tagList.map((item, index) => {
+                  //let index = tagList.findIndex((el) => el === item);
                   if (img.tags.some((el) => el === item)) {
                     return (
                       <MyChip key={index} label={item} type="individual" />
@@ -135,8 +135,8 @@ export default function MyCollectionModal(props) {
               <div>
                 <h6 className="modal__subtitle">Delete a tag from the list</h6>
                 <div className="modal__tagList">
-                  {img.tags.map((item) => {
-                    let index = img.tags.findIndex((el) => el === item);
+                  {img.tags.map((item, index) => {
+                    //let index = img.tags.findIndex((el) => el === item);
                     return (
                       <MyChip
                         key={index}

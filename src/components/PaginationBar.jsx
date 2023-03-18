@@ -15,7 +15,7 @@ const theme = createTheme({
 export default function PaginationBar(props) {
   const { onChange, currentPage, totalPages } = props;
 
-  function handleChange(e, value) {
+  /* function handleChange(e, value) {
     window.scroll({
       top: 600,
       behavior: "smooth",
@@ -23,14 +23,14 @@ export default function PaginationBar(props) {
     setTimeout(() => {
       onChange(value);
     }, 500);
-  }
+  } */
   return (
     <ThemeProvider theme={theme}>
       <Stack spacing={2}>
         <Pagination
           count={totalPages || 10}
           page={currentPage || 1}
-          onChange={handleChange}
+          onChange={(e, value) => onChange(value)}
           size="small"
           color="custom"
           showFirstButton

@@ -73,8 +73,8 @@ function Slide({ photoList }) {
         >
           <img src={controlArrow} alt="arrow icon" />
         </span>
-        {photoList.map((item) => {
-          const index = photoList.findIndex((el) => el === item);
+        {photoList.map((item, index) => {
+          //const index = photoList.findIndex((el) => el === item);
           return (
             <img
               key={index}

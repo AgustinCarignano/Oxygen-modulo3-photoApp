@@ -1,20 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
-//función asincrona para que genere la ruta de descarga de la imagen al agregarla a favoritos
-export const createHrefToDownload = createAsyncThunk(
-  "myCollection/hrefToDownload",
-  async ({ url, id }) => {
-    console.log("entre al thunk", id);
-    const response = await fetch(url, {
-      headers: {
-        Authorization: "Client-ID JbhJ4T2vDHGE_0YaRfxjaoZoCvGXoArWcn_g_DcP624",
-      },
-    });
-    const data = await response.blob();
-    const href = window.URL.createObjectURL(data);
-    return { id, href };
-  }
-);
+import { createSlice } from "@reduxjs/toolkit";
 
 //Estado inicial cuando no hay nada guardado en el localStorage
 const defaultInitialState = {
@@ -45,12 +29,10 @@ export const myCollectionSlice = createSlice({
           height,
           likes,
           urls,
-          href: "#void",
           dateAdded: date.toLocaleString(),
           tags: [],
         };
         state.photos.push(favPhoto);
-        //dispatch(createHrefToDownload(full, id));
         localStorage.setItem("myCollection", JSON.stringify(state));
       }
     },
@@ -96,14 +78,6 @@ export const myCollectionSlice = createSlice({
       state.tagList = [...newTagList];
       localStorage.setItem("myCollection", JSON.stringify(state));
     },
-  },
-  //Se modifica el valor del href que permite descargar la imagen luego de completar el llamado a la API
-  extraReducers: (builder) => {
-    builder.addCase(createHrefToDownload.fulfilled, (state, action) => {
-      const photo = state.photos.find((item) => item.id === action.payload.id);
-      photo.href = action.payload.href;
-      localStorage.setItem("myCollection", JSON.stringify(state));
-    });
   },
 });
 
