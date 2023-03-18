@@ -8,7 +8,7 @@ This app allow to the user search photos in the web using the Unsplash's API, an
 
 ## Capture
 
-![](https://i.imgur.com/4qWC1zC.gif)
+![](https://github.com/AgustinCarignano/photo-app/blob/main/PhotoApp.gif)
 
 ## Links
 
