@@ -16,8 +16,8 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
 
 const pages = [
-  { name: "Search photos", direction: "/photo-app/searchPhotos" },
-  { name: "My collection", direction: "/photo-app/myCollection" },
+  { name: "Search photos", direction: "/searchPhotos" },
+  { name: "My collection", direction: "/myCollection" },
 ];
 
 function HideOnScroll(props) {
