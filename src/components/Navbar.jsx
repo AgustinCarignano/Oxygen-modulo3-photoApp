@@ -63,7 +63,7 @@ function Navbar() {
                   textDecoration: "none",
                 }}
               >
-                <Link to="/photo-app">PhotoApp</Link>
+                <Link to="/">PhotoApp</Link>
               </Typography>
 
               <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
