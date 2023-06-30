@@ -12,8 +12,8 @@ This app allow to the user search photos in the web using the Unsplash's API, an
 
 ## Links
 
-- [Figma design]('https://www.figma.com/file/MYf7CzHlwjT8OuJ8lcsxOD/Photo-App---AC?node-id=0%3A1&t=yI7khenYyiMLxD7M-1')
-- [App]("https://agustincarignano.github.io/photo-app/")
+- [Figma design](https://www.figma.com/file/MYf7CzHlwjT8OuJ8lcsxOD/Photo-App---AC?node-id=0%3A1&t=yI7khenYyiMLxD7M-1)
+- [App](http://photo-app-carignano.s3-website.eu-west-3.amazonaws.com)
 
 ## Technical characteristics
 
